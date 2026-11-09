@@ -1,0 +1,417 @@
+{
+  "n_posts": 1000,
+  "serial_stats": {
+    "posts": 1000,
+    "stories": 5149,
+    "too_late": 1,
+    "bot_or_short": 2400,
+    "no_window": 105,
+    "rejected_markers": 2065,
+    "kept": 578
+  },
+  "batched_stats": {
+    "posts": 1000,
+    "stories": 5149,
+    "too_late": 1,
+    "bot_or_short": 2400,
+    "no_window": 105,
+    "rejected_markers": 2065,
+    "kept": 578
+  },
+  "all_stats_equal": true,
+  "serial_seconds": 89.933,
+  "batched_seconds": 21.16,
+  "csv_equality": {
+    "candidates.csv": {
+      "byte_identical": true,
+      "sha256": "519974f9e179359d3ad71e40c0338b67ea6720187369dc2c42e12d9ea5e3b098"
+    },
+    "candidates_all.csv": {
+      "byte_identical": true,
+      "sha256": "dc88635bf2aecd50d3057e96c05beb47280c42f6659fa18db43d3ef4cb9c115a"
+    }
+  },
+  "entity_only_parallel": {
+    "n_posts": 1000,
+    "byte_identical_outputs": true,
+    "metadata": {
+      "status": "completed",
+      "started_at": "2026-11-07T02:56:02.877831+00:00",
+      "engine": "ordered_parallel_entity_labels",
+      "max_posts": 1000,
+      "min_score": 2,
+      "n": 200,
+      "seed": 13,
+      "n_process": 16,
+      "batch_size": 64,
+      "inputs": [
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00000-of-00005.parquet",
+          "bytes": 271359360,
+          "rows": 53035,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        },
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00001-of-00005.parquet",
+          "bytes": 273515512,
+          "rows": 53035,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        },
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00002-of-00005.parquet",
+          "bytes": 268669998,
+          "rows": 53035,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        },
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00003-of-00005.parquet",
+          "bytes": 274224071,
+          "rows": 53035,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        },
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00004-of-00005.parquet",
+          "bytes": 269965267,
+          "rows": 53034,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        }
+      ],
+      "packages": {
+        "pandas": "3.1.1",
+        "numpy": "2.5.4",
+        "pyarrow": "26.0.1",
+        "spacy": "3.8.18",
+        "en_core_web_sm": "3.8.0"
+      },
+      "python": "3.13.15 (main, Sep 24 2026, 17:55:50) [Clang 22.1.3 ]",
+      "api_calls": 0,
+      "human_review_completed": false,
+      "source_sha256": {
+        "teacher/select_passages.py": "c96607596a75472694571be73b2d18663c97db1d9bb0f8864fb676125753756d",
+        "screen_passages.py": "578e8040e55fc8a60e78f0c9b1401c07a135767625aeb327f4a2e1591552bd89",
+        "screen_passages_batched.py": "7583ee1d98cf5484e7ed578dc89b074a372059d157f5b3fc986ed64484a456c8",
+        "screen_passages_parallel.py": "5c2d619fe1d11e3d1ebc800eb007ea4dff1492d0987e1d5dc1e7bb0590502a38"
+      },
+      "download_verification": {
+        "dataset_id": "euclaise/WritingPrompts_preferences",
+        "checked_date": "2026-11-07",
+        "files": [
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00000-of-00005.parquet",
+            "bytes": 271359360,
+            "sha256": "d17cd265d4c9ddd0f7ae91a4955a42ccffd14704bce79413798596734d1fdb54",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "d17cd265d4c9ddd0f7ae91a4955a42ccffd14704bce79413798596734d1fdb54",
+            "sha_matches_download_etag": true
+          },
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00001-of-00005.parquet",
+            "bytes": 273515512,
+            "sha256": "68dc8df091c6deada66c9e199912a7b995f9ce59f4a4e7181aefdc35ee293cd9",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "68dc8df091c6deada66c9e199912a7b995f9ce59f4a4e7181aefdc35ee293cd9",
+            "sha_matches_download_etag": true
+          },
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00002-of-00005.parquet",
+            "bytes": 268669998,
+            "sha256": "a350610b0dad34e98f5ba3a1306b753cdb8395d7f0b61a2faee29c5eb74cea2a",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "a350610b0dad34e98f5ba3a1306b753cdb8395d7f0b61a2faee29c5eb74cea2a",
+            "sha_matches_download_etag": true
+          },
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00003-of-00005.parquet",
+            "bytes": 274224071,
+            "sha256": "ff6db4e250937aa7e4bad147aa533d527a3aedf9c0594f522adc3cf9fd8f2cef",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "ff6db4e250937aa7e4bad147aa533d527a3aedf9c0594f522adc3cf9fd8f2cef",
+            "sha_matches_download_etag": true
+          },
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00004-of-00005.parquet",
+            "bytes": 269965267,
+            "sha256": "8a80e44e02bfb9e63ec847331e30ebc5183077d94dffd45fbc4fc18b15affb3c",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "8a80e44e02bfb9e63ec847331e30ebc5183077d94dffd45fbc4fc18b15affb3c",
+            "sha_matches_download_etag": true
+          }
+        ],
+        "total_bytes": 1357734208
+      },
+      "filter_stats": {
+        "posts": 1000,
+        "stories": 5149,
+        "too_late": 1,
+        "bot_or_short": 2400,
+        "no_window": 105,
+        "rejected_markers": 2065,
+        "kept": 578
+      },
+      "output_summary": {
+        "candidates.csv": {
+          "exists": true,
+          "rows": 198,
+          "word_count_min": 150,
+          "word_count_max": 295,
+          "all_words_in_range": true,
+          "tier_counts": {
+            "high": 66,
+            "mid": 66,
+            "low": 66
+          },
+          "duplicate_texts": 0,
+          "sha256": "519974f9e179359d3ad71e40c0338b67ea6720187369dc2c42e12d9ea5e3b098",
+          "duplicate_passage_ids": 0,
+          "duplicate_source_prompts": 0,
+          "human_review_fields_empty": true
+        },
+        "candidates_all.csv": {
+          "exists": true,
+          "rows": 578,
+          "word_count_min": 150,
+          "word_count_max": 300,
+          "all_words_in_range": true,
+          "tier_counts": {
+            "low": 193,
+            "high": 193,
+            "mid": 192
+          },
+          "duplicate_texts": 0,
+          "sha256": "dc88635bf2aecd50d3057e96c05beb47280c42f6659fa18db43d3ef4cb9c115a"
+        }
+      },
+      "ended_at": "2026-11-07T02:56:11.454982+00:00",
+      "elapsed_seconds": 8.577
+    }
+  },
+  "worker_lexical_and_ner": {
+    "n_posts": 1000,
+    "byte_identical_outputs": true,
+    "metadata": {
+      "status": "completed",
+      "started_at": "2026-11-07T02:58:41.808708+00:00",
+      "engine": "ordered_parallel_lexical_and_entity_labels",
+      "max_posts": 1000,
+      "min_score": 2,
+      "n": 200,
+      "seed": 13,
+      "n_process": 16,
+      "batch_size": 64,
+      "inputs": [
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00000-of-00005.parquet",
+          "bytes": 271359360,
+          "rows": 53035,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        },
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00001-of-00005.parquet",
+          "bytes": 273515512,
+          "rows": 53035,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        },
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00002-of-00005.parquet",
+          "bytes": 268669998,
+          "rows": 53035,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        },
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00003-of-00005.parquet",
+          "bytes": 274224071,
+          "rows": 53035,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        },
+        {
+          "path": "/data2/daidasen/OtherTest/Zhou/experiment_02_provenance/data/raw/WritingPrompts_preferences/data/train-00004-of-00005.parquet",
+          "bytes": 269965267,
+          "rows": 53034,
+          "columns": [
+            "post_text",
+            "post_title",
+            "post_scores",
+            "comment_texts",
+            "comment_scores",
+            "comment_times"
+          ]
+        }
+      ],
+      "packages": {
+        "pandas": "3.1.1",
+        "numpy": "2.5.4",
+        "pyarrow": "26.0.1",
+        "spacy": "3.8.18",
+        "en_core_web_sm": "3.8.0"
+      },
+      "python": "3.13.15 (main, Sep 24 2026, 17:55:50) [Clang 22.1.3 ]",
+      "api_calls": 0,
+      "human_review_completed": false,
+      "source_sha256": {
+        "teacher/select_passages.py": "c96607596a75472694571be73b2d18663c97db1d9bb0f8864fb676125753756d",
+        "screen_passages.py": "578e8040e55fc8a60e78f0c9b1401c07a135767625aeb327f4a2e1591552bd89",
+        "screen_passages_batched.py": "7583ee1d98cf5484e7ed578dc89b074a372059d157f5b3fc986ed64484a456c8",
+        "screen_passages_parallel.py": "019e10d8dc6ad26cf13d79e0f06a61259cf0eea093f35eeb8009d9e8c3240b34"
+      },
+      "download_verification": {
+        "dataset_id": "euclaise/WritingPrompts_preferences",
+        "checked_date": "2026-11-07",
+        "files": [
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00000-of-00005.parquet",
+            "bytes": 271359360,
+            "sha256": "d17cd265d4c9ddd0f7ae91a4955a42ccffd14704bce79413798596734d1fdb54",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "d17cd265d4c9ddd0f7ae91a4955a42ccffd14704bce79413798596734d1fdb54",
+            "sha_matches_download_etag": true
+          },
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00001-of-00005.parquet",
+            "bytes": 273515512,
+            "sha256": "68dc8df091c6deada66c9e199912a7b995f9ce59f4a4e7181aefdc35ee293cd9",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "68dc8df091c6deada66c9e199912a7b995f9ce59f4a4e7181aefdc35ee293cd9",
+            "sha_matches_download_etag": true
+          },
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00002-of-00005.parquet",
+            "bytes": 268669998,
+            "sha256": "a350610b0dad34e98f5ba3a1306b753cdb8395d7f0b61a2faee29c5eb74cea2a",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "a350610b0dad34e98f5ba3a1306b753cdb8395d7f0b61a2faee29c5eb74cea2a",
+            "sha_matches_download_etag": true
+          },
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00003-of-00005.parquet",
+            "bytes": 274224071,
+            "sha256": "ff6db4e250937aa7e4bad147aa533d527a3aedf9c0594f522adc3cf9fd8f2cef",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "ff6db4e250937aa7e4bad147aa533d527a3aedf9c0594f522adc3cf9fd8f2cef",
+            "sha_matches_download_etag": true
+          },
+          {
+            "path": "data/raw/WritingPrompts_preferences/data/train-00004-of-00005.parquet",
+            "bytes": 269965267,
+            "sha256": "8a80e44e02bfb9e63ec847331e30ebc5183077d94dffd45fbc4fc18b15affb3c",
+            "download_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+            "download_etag": "8a80e44e02bfb9e63ec847331e30ebc5183077d94dffd45fbc4fc18b15affb3c",
+            "sha_matches_download_etag": true
+          }
+        ],
+        "total_bytes": 1357734208
+      },
+      "filter_stats": {
+        "posts": 1000,
+        "stories": 5149,
+        "too_late": 1,
+        "bot_or_short": 2400,
+        "no_window": 105,
+        "rejected_markers": 2065,
+        "kept": 578
+      },
+      "output_summary": {
+        "candidates.csv": {
+          "exists": true,
+          "rows": 198,
+          "word_count_min": 150,
+          "word_count_max": 295,
+          "all_words_in_range": true,
+          "tier_counts": {
+            "high": 66,
+            "mid": 66,
+            "low": 66
+          },
+          "duplicate_texts": 0,
+          "sha256": "519974f9e179359d3ad71e40c0338b67ea6720187369dc2c42e12d9ea5e3b098",
+          "duplicate_passage_ids": 0,
+          "duplicate_source_prompts": 0,
+          "human_review_fields_empty": true
+        },
+        "candidates_all.csv": {
+          "exists": true,
+          "rows": 578,
+          "word_count_min": 150,
+          "word_count_max": 300,
+          "all_words_in_range": true,
+          "tier_counts": {
+            "low": 193,
+            "high": 193,
+            "mid": 192
+          },
+          "duplicate_texts": 0,
+          "sha256": "dc88635bf2aecd50d3057e96c05beb47280c42f6659fa18db43d3ef4cb9c115a"
+        }
+      },
+      "ended_at": "2026-11-07T02:58:48.218013+00:00",
+      "elapsed_seconds": 6.409
+    }
+  },
+  "full_run_prefix_20000": {
+    "matched_original_serial_kept_passages": 6043,
+    "all_source_metadata_and_excerpt_values_equal": true,
+    "tier_excluded_reason": "Full-run tiers use full population, as required by the original sampler"
+  }
+}

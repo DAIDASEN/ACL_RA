@@ -1,0 +1,50 @@
+# 本地环境与缓存
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+
+# 密钥与机器配置；保留无密钥示例
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+/ACL_RA_GitHub.zip
+
+# 私人沟通与内部工作文档（本地保留）
+/internal/
+**/docs/source/
+**/docs/TEACHER_REQUIREMENTS.md
+
+# 本机下载验证和当前人工审核队列
+/experiment_02_provenance/configs/active_candidates.json
+/experiment_02_provenance/configs/download_verification.json
+
+# 实验数据、运行日志和私人核查记录默认不提交。
+**/data/raw/**
+**/data/processed/**
+**/data/manifests/**
+**/validation/pilot/**
+**/validation/formal/**
+**/validation/review/**
+**/results/**
+**/analysis/**
+**/figures/**
+**/logs/**
+!**/.gitkeep

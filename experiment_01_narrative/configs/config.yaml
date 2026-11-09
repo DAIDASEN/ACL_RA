@@ -1,0 +1,94 @@
+{
+  "config_version": "narrative-draft-v0.1",
+  "research_status": "preparation_only",
+  "formal_approved": false,
+  "schedule_seed": 20261106,
+  "models": {
+    "M1": {
+      "provider": "pending",
+      "api_model": "pending",
+      "api_base_url": "pending",
+      "api_key_env": "NARRATIVE_M1_API_KEY",
+      "parameter_support_verified": false
+    },
+    "M2": {
+      "provider": "pending",
+      "api_model": "pending",
+      "api_base_url": "pending",
+      "api_key_env": "NARRATIVE_M2_API_KEY",
+      "parameter_support_verified": false
+    }
+  },
+  "generation": {
+    "suggested_temperature": 0.8,
+    "suggested_top_p": 1,
+    "max_output_tokens": "pending",
+    "actual_parameters_verified": false,
+    "system_prompt": "You are a fiction writer.",
+    "network_tools_enabled": false,
+    "independent_requests": true,
+    "max_technical_retries": 3
+  },
+  "stages": {
+    "pilot": {
+      "wordings": [
+        "A",
+        "B"
+      ],
+      "replicates": 3
+    },
+    "formal": {
+      "wordings": [
+        "A",
+        "B",
+        "C"
+      ],
+      "replicates": 20,
+      "sample_size_status": "tentative_pending_teacher_confirmation"
+    }
+  },
+  "budget": {
+    "currency": "pending",
+    "project_cap": "pending",
+    "shared_context_amount": 4400,
+    "shared_amount_is_NOT_this_project_allocation": true,
+    "price_source": "pending",
+    "price_checked_at": "pending"
+  },
+  "run_window": {
+    "start": "pending",
+    "end": "pending"
+  },
+  "extraction": {
+    "provider": "pending",
+    "api_model_or_revision": "pending",
+    "prompt_version": "teacher-2026-10-30"
+  },
+  "embedding": {
+    "model": "pending",
+    "revision": "pending",
+    "normalize": true,
+    "field_order": [
+      "goal",
+      "triggering_event",
+      "central_conflict",
+      "decisive_action",
+      "outcome"
+    ]
+  },
+  "robustness": {
+    "second_embedding_model": "pending",
+    "second_embedding_revision": "pending",
+    "representation": "pending"
+  },
+  "analysis": {
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20261107,
+    "hypothesis_test_implementation": "pending_teacher_confirmation"
+  },
+  "human_validation": {
+    "coder1": "pending",
+    "coder2": "pending",
+    "adjudicator": "pending"
+  }
+}

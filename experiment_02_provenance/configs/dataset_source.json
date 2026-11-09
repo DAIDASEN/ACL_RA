@@ -1,0 +1,31 @@
+{
+  "dataset_id": "euclaise/WritingPrompts_preferences",
+  "homepage": "https://huggingface.co/datasets/euclaise/WritingPrompts_preferences",
+  "metadata_endpoint": "https://huggingface.co/api/datasets/euclaise/WritingPrompts_preferences",
+  "checked_date": "2026-11-06",
+  "revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+  "files": [
+    "data/train-00000-of-00005.parquet",
+    "data/train-00001-of-00005.parquet",
+    "data/train-00002-of-00005.parquet",
+    "data/train-00003-of-00005.parquet",
+    "data/train-00004-of-00005.parquet"
+  ],
+  "verification_status": "local_files_sha256_matched_huggingface_download_metadata",
+  "full_dataset_downloaded": true,
+  "candidates_generated": true,
+  "expected_fields": [
+    "post_text",
+    "post_title",
+    "post_scores",
+    "comment_texts",
+    "comment_scores",
+    "comment_times"
+  ],
+  "download_verified_date": "2026-11-07",
+  "source_post_rows": 265174,
+  "full_screening_run": "full_worker_20261107",
+  "auto_passed_passages": 82184,
+  "original_sample_size": 198,
+  "reading_priority_run": "priority_20261107"
+}

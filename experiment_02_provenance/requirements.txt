@@ -1,0 +1,10 @@
+# 老师脚本所需依赖；尚未锁版本，正式采集前安装、验证并保存环境锁文件。
+-r requirements-smoke.txt
+datasets
+spacy
+pyarrow
+openai
+statsmodels
+scipy
+rapidfuzz
+unidecode

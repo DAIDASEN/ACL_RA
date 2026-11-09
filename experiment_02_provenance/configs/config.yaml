@@ -1,0 +1,122 @@
+{
+  "config_version": "provenance-draft-v0.1",
+  "research_status": "automatic_screening_completed_pending_human_review",
+  "formal_approved": false,
+  "note": "Decision record only: teacher scripts do not load this file automatically.",
+  "models": {
+    "gpt": {
+      "provider": "pending",
+      "api_model": "pending",
+      "api_base_url": "pending",
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "claude": {
+      "provider": "pending",
+      "api_model": "pending",
+      "api_base_url": "pending",
+      "api_key_env": "ANTHROPIC_API_KEY"
+    },
+    "qwen": {
+      "provider": "pending",
+      "api_model": "pending",
+      "api_base_url": "pending",
+      "api_key_env": "DASHSCOPE_API_KEY"
+    },
+    "deepseek": {
+      "provider": "pending",
+      "api_model": "pending",
+      "api_base_url": "pending",
+      "api_key_env": "DEEPSEEK_API_KEY"
+    }
+  },
+  "pilot": {
+    "models": "pending_select_3",
+    "n_passages": 20,
+    "labels": [
+      "L01",
+      "L03",
+      "L05",
+      "L06",
+      "L07",
+      "L10"
+    ],
+    "reps": 1,
+    "total_expected_rating_calls": 360
+  },
+  "formal": {
+    "n_passages": 120,
+    "labels": [
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L06",
+      "L07",
+      "L08",
+      "L09",
+      "L10",
+      "L11",
+      "L12",
+      "L13",
+      "L14"
+    ],
+    "reps": 3,
+    "n_models": 4,
+    "total_expected_rating_calls": 20160
+  },
+  "parameters": {
+    "temperature": 1,
+    "teacher_max_tokens": 300,
+    "max_tokens_verified": false,
+    "network_tools_enabled": false
+  },
+  "passages": {
+    "source": "euclaise/WritingPrompts_preferences",
+    "source_revision": "6f0b721311a33736b19434e276f04727d5c2e213",
+    "min_words": 150,
+    "max_words": 300,
+    "final_count": 120,
+    "target_per_quality_tier": 40,
+    "selection_seed": 13,
+    "plausibility_reviewers": "pending_2_to_3_people"
+  },
+  "budget": {
+    "currency": "pending",
+    "project_cap": "pending",
+    "shared_context_amount": 4400,
+    "shared_amount_is_NOT_this_project_allocation": true,
+    "price_source": "pending",
+    "price_checked_at": "pending"
+  },
+  "run_window": {
+    "start": "pending",
+    "end": "pending"
+  },
+  "analysis": {
+    "pilot_missing_label_handling": "pending_fix",
+    "bundle_interpretation": "pending_teacher_discussion",
+    "multiple_testing_families": "pending_teacher_confirmation"
+  },
+  "candidate_materials": {
+    "run_id": "priority_20261107",
+    "stage": "reading_priority_not_final",
+    "candidates_path": "data/processed/candidates/priority_20261107/candidates.csv",
+    "teacher_candidates_path": "data/processed/candidates/full_worker_20261107/candidates.csv",
+    "teacher_full_pool_path": "data/processed/candidates/full_worker_20261107/candidates_all.csv",
+    "review_directory": "validation/review/priority_20261107",
+    "candidates_sha256": "e78653f43c8b8d754cdef0f4856b5be6a2dd4b63d492b36767016ac4cc57d6c3",
+    "candidate_count": 198,
+    "tier_counts": {
+      "high": 66,
+      "mid": 66,
+      "low": 66
+    },
+    "human_review_status": "pending",
+    "memorization_status": "pending",
+    "extra_heuristics_applied": true,
+    "assistant_preview_count": 6,
+    "assistant_preview_recommend_exclude": 3,
+    "final_passages_created": false
+  }
+}
